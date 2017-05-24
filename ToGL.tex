@@ -1,0 +1,50 @@
+\documentclass{book}
+\usepackage{changepage}
+\oddsidemargin 0.0in
+\evensidemargin 0.0in
+\textwidth 6.0in
+%\headheight 1.0in
+\topmargin -0.5in
+\textheight 8.5in
+%\footheight 1.0in
+
+\newcommand{\tabletitle}[1]{&\\\hline\multicolumn{2}{c}{\textbf{#1}}\\\hline}
+
+\newcommand{\V}[1]{$^{#1}$}
+\newcommand{\Scripture}[3]{\begin{adjustwidth}{.5in}{0in}\Space{\centering\textbf{#1}\par}\Space {#3}\par \begin{flushright}{#1} ({#2})\end{flushright}\par
+\end{adjustwidth}\Space}
+
+
+%\newtheorem{song}{Song}
+\newcounter{song}
+\newcommand{\Space}{\vspace{.15in}}
+\newcommand{\CopyRight}[1]{\par\noindent\emph{\small{#1}}\par\Space}
+%\newcommand{\Song}[1]{\Space\noindent(\stepcounter{song}\arabic{song}\addcontentsline{toc}{chapter}{#1}) \textbf{#1}\Space}
+\newcommand{\Song}[1]{\Space{\centering\textbf{#1}\par}\Space}
+\newcommand{\ChorusDef}[1]{\Space\textbf{Chorus}\par\vspace{6pt}\hspace{12pt}\parbox{\textwidth}{#1}\Space}
+\newcommand{\Chorus}{\Space\textbf{Chorus}\Space}
+\newcommand{\inputSong}[1]{\begin{adjustwidth}{.5in}{0in}{\setlength\parindent{0pt}\input{#1}}\end{adjustwidth}\Space}
+
+\title{{\Huge The Treasures of God's Love}\\A Year of Family Celebrations}
+\author{Keith Evan Schubert}
+
+\begin{document}
+\maketitle
+\tableofcontents
+
+
+\input{ToGL_Resurrection}
+\input{ToGL_Pentecost}
+\input{ToGL_ReformationDay}
+\input{ToGL_Thanksgiving}
+\input{ToGL_Christmas}
+\input{ToGL_Xmas_Week1}
+
+\appendix
+
+\input{ToGL_Hanukkah}
+\input{ToGL_NoEaster}
+\input{ToGL_NoHalloween}
+
+
+\end{document} 
